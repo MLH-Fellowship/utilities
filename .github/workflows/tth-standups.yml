@@ -1,0 +1,17 @@
+name: Post Daily Standup (TTh)
+
+on:
+  schedule:
+    - cron:  '40 0 * * 2,4' # Runs T&Th at 12:40am UTC
+
+jobs:
+  create_discussions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: MLH-Fellowship/create-standup-discussions@v1.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_ORGANIZATION_TOKEN }}
+        with:
+          organization: "MLH-Fellowship"
+          team_slugs: "pod-1-0-3, pod-1-0-5, pod-1-0-6"

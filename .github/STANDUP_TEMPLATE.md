@@ -2,10 +2,10 @@ Share your daily standup update with your Pod and mentor here. Respond to this
 discussion before your standup starts in the following format:
 
 ```
-**Yesterday**:
+**What did you achieve in the last 24 hours?**:
  - 
 
-**Today**:
+**What are your priorities for the next 24 hours?**:
  - 
 
 **Blockers**:

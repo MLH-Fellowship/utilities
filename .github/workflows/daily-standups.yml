@@ -15,4 +15,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_ORGANIZATION_TOKEN }}
         with:
           organization: "MLH-Fellowship"
-          team_slugs: "pod-4-0-0, pod-4-0-1, pod-4-0-2, pod-4-0-3, pod-4-2-0, pod-4-2-1"
+          team_slugs: "pod-4-0-0, pod-4-0-1, pod-4-0-2, pod-4-0-3, pod-4-2-0, pod-4-2-1 pod-4-1-0 pod-4-1-1 pod-4-1-2"

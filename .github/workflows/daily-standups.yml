@@ -3,7 +3,7 @@ name: Post Daily Standup (M-F)
 on:
   workflow_dispatch: 
   schedule:
-    - cron:  '0 4 * 1 1-5' #'0 4 * * 1-5' # Runs M-F at 4:00am UTC
+    - cron:  '0 4 * 2-4 1-5' #'0 4 * * 1-5' # Runs M-F at 4:00am UTC
 
 jobs:
   create_discussions:
@@ -15,4 +15,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_ORGANIZATION_TOKEN }}
         with:
           organization: "MLH-Fellowship"
-          team_slugs: "mlh-prep-january-2022"
+          team_slugs: "22-1-1, 22-1-2, 22-1-3, 22-1-4, 22-1-5, 22-1-6, 22-1-7, 22-1-8, 22-1-9, 22-1-10, 22-1-11"

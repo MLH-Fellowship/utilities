@@ -15,4 +15,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_ORGANIZATION_TOKEN }}
         with:
           organization: "MLH-Fellowship"
-          team_slugs: "mlh-prep-january-2022"
+          team_slugs: ""
